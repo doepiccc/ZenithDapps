@@ -1,0 +1,11 @@
+{
+  "name": "Zenith Apps",
+  "short_name": "Zenith Apps",
+  "description": "Ten useful consumer dApps on Zenith EVM Testnet.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090d12",
+  "theme_color": "#090d12",
+  "icons": [{ "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

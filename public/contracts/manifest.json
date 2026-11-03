@@ -1,0 +1,71 @@
+{
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "generatedAt": "2026-11-03T20:16:17.056Z",
+  "contracts": {
+    "registry": {
+      "title": "Suite Registry",
+      "contractName": "ZenithSuiteRegistry",
+      "category": "infrastructure"
+    },
+    "demoToken": {
+      "title": "Demo USDC",
+      "contractName": "DemoUSDC",
+      "category": "infrastructure"
+    },
+    "zenlink": {
+      "title": "ZenLink",
+      "contractName": "EscrowVault",
+      "category": "payments"
+    },
+    "pactfi": {
+      "title": "PactFi",
+      "contractName": "HabitPool",
+      "category": "payments"
+    },
+    "splitzen": {
+      "title": "SplitZen",
+      "contractName": "GroupTab",
+      "category": "payments"
+    },
+    "microretail": {
+      "title": "MicroRetail RWA",
+      "contractName": "MockTBondVault",
+      "category": "streaming"
+    },
+    "substream": {
+      "title": "SubStream",
+      "contractName": "SubStream",
+      "category": "streaming"
+    },
+    "safedeal": {
+      "title": "SafeDeal P2P",
+      "contractName": "SafeDealP2P",
+      "category": "payments"
+    },
+    "priceOracle": {
+      "title": "Demo BTC/USD Oracle",
+      "contractName": "DemoPriceOracle",
+      "category": "infrastructure"
+    },
+    "flashpredict": {
+      "title": "FlashPredict",
+      "contractName": "FlashPredict",
+      "category": "streaming"
+    },
+    "fairtix": {
+      "title": "FairTix",
+      "contractName": "FairTix",
+      "category": "assets"
+    },
+    "deadman": {
+      "title": "DeadMan's Vault",
+      "contractName": "DeadMansVault",
+      "category": "assets"
+    },
+    "gumroad": {
+      "title": "OnChain Gumroad",
+      "contractName": "DigitalShop",
+      "category": "assets"
+    }
+  }
+}
