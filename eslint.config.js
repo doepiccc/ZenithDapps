@@ -15,7 +15,7 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-hooks/purity': 'off',
       'react-hooks/set-state-in-effect': 'off',
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true, allowExportNames: ['useWallet', 'useContracts', 'useToast', 'useNetworkPulse', 'useAsyncAction', 'receiptLink', 'stopSubmit'] }],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true, allowExportNames: ['useWallet', 'useContracts', 'useToast', 'useNetworkPulse', 'useAsyncAction', 'receiptLink', 'stopSubmit', 'createTranslator', 'useLocale'] }],
       '@typescript-eslint/no-explicit-any': 'off'
     },
   },

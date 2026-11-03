@@ -54,6 +54,9 @@ svg { display: block; }
 .site-header nav a:hover { color: #fff; }
 .site-header nav svg { width: 11px; }
 .site-header__actions { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+.language-switch { height: 34px; padding: 3px; display: flex; align-items: center; border: 1px solid var(--line); background: rgba(255,255,255,.02); }
+.language-switch button { width: 30px; height: 26px; padding: 0; border: 0; background: transparent; color: #66737e; font-size: 8px; letter-spacing: .08em; font-weight: 850; }
+.language-switch button.is-active { color: #11160e; background: var(--lime); }
 .testnet-chip { height: 34px; padding: 0 12px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); color: #8f9ba6; font-size: 9px; letter-spacing: .14em; font-weight: 800; }
 .testnet-chip i, .contract-state i, .challenge-state i { width: 5px; height: 5px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 9px rgba(186,255,74,.8); }
 .header-back { margin-left: 8px; display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; font-weight: 700; }

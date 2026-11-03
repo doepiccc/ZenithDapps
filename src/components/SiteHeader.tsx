@@ -2,6 +2,7 @@ import { ArrowLeft, ExternalLink, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { Brand } from './Brand'
 import { WalletButton } from './WalletButton'
+import { LanguageSwitch } from '../i18n/LocaleContext'
 
 export function SiteHeader({ appMode = false }: { appMode?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -20,6 +21,7 @@ export function SiteHeader({ appMode = false }: { appMode?: boolean }) {
           </nav>
         )}
         <div className="site-header__actions">
+          <LanguageSwitch />
           <span className="testnet-chip"><i /> TESTNET</span>
           <WalletButton />
           {!appMode && <button className="menu-toggle" type="button" onClick={() => setMenuOpen((value) => !value)} aria-label="Меню">{menuOpen ? <X /> : <Menu />}</button>}
