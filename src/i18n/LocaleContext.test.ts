@@ -19,4 +19,10 @@ describe('locale translator', () => {
   it('keeps unknown technical identifiers intact', () => {
     expect(translate('ZenithSuiteRegistry', 'ru')).toBe('ZenithSuiteRegistry')
   })
+
+  it('does not translate a target-language substring twice', () => {
+    const title = createTranslator([['of Web3.', 'Web3.']])
+    expect(title(' of Web3.', 'en')).toBe(' of Web3.')
+    expect(title(' Web3.', 'en')).toBe(' of Web3.')
+  })
 })

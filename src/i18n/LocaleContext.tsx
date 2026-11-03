@@ -30,6 +30,9 @@ export function createTranslator(pairs: readonly TranslationPair[]) {
     const exact = locale === 'en' ? toEnglish.get(clean) : toRussian.get(clean)
     if (exact) return preserveWhitespace(source, exact)
 
+    const containsCyrillic = /[А-Яа-яЁё]/.test(clean)
+    if ((locale === 'en' && !containsCyrillic) || (locale === 'ru' && containsCyrillic)) return source
+
     let translated = clean
     const replacements = locale === 'en'
       ? ordered.map(([english, russian]) => [russian, english] as const)
