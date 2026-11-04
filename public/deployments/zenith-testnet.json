@@ -2,7 +2,26 @@
   "schemaVersion": 1,
   "chainId": 936485,
   "network": "Zenith EVM Testnet",
-  "updatedAt": null,
-  "deployer": null,
-  "contracts": {}
+  "updatedAt": "2026-11-03T22:52:18.000Z",
+  "deployer": "0x0Be39b46e9192c82e6B4d0de8292bfB73FD9EB1D",
+  "contracts": {
+    "demoToken": {
+      "address": "0x856eFF50495ebfFB405268665Bd820B69250a6F6",
+      "txHash": "0xce56b76a8e2bb2cb1e4b533d560cf1e53618e6bcd0cd28df6836e3f8acbf5efe",
+      "blockNumber": 19714,
+      "deployedAt": "2026-11-03T22:52:09.000Z",
+      "contractName": "DemoUSDC"
+    },
+    "registry": {
+      "address": "0xC7F7D5E20682a6d048e92d23E32e8E4228196e8E",
+      "contractName": "ZenithSuiteRegistry"
+    },
+    "zenlink": {
+      "address": "0xB06755Fcf6390deE3830AcdFB73734E99f20a9a7",
+      "txHash": "0x19cde2d5b56841d64fc2edcf6ce3cc5ac9fdb8243388402e6606bd706bd2e6a0",
+      "blockNumber": 19716,
+      "deployedAt": "2026-11-03T22:52:18.000Z",
+      "contractName": "EscrowVault"
+    }
+  }
 }
