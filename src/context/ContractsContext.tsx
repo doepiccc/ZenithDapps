@@ -25,7 +25,7 @@ interface ContractsContextValue {
   addressOf: (key: string) => string | null
   isLive: (key: string) => boolean
   read: (key: string, method: string, args?: unknown[]) => Promise<any>
-  execute: (key: string, method: string, args?: unknown[]) => Promise<ContractTransactionReceipt>
+  execute: (key: string, method: string, args?: unknown[], overrides?: { value?: bigint }) => Promise<ContractTransactionReceipt>
   approve: (spenderKey: string, amount: bigint) => Promise<ContractTransactionReceipt>
   reload: () => Promise<void>
 }
@@ -80,12 +80,12 @@ export function ContractsProvider({ children }: { children: ReactNode }) {
     return contract.getFunction(method)(...args)
   }, [addressOf])
 
-  const execute = useCallback(async (key: string, method: string, args: unknown[] = []) => {
+  const execute = useCallback(async (key: string, method: string, args: unknown[] = [], overrides?: { value?: bigint }) => {
     const address = addressOf(key)
     if (!address) throw new Error(`${key}: контракт ещё не задеплоен. Используйте Zenith Control Panel.`)
     const signer = await wallet.getSigner()
     const contract = new Contract(address, abiFor(key), signer)
-    const transaction = await contract.getFunction(method)(...args)
+    const transaction = await contract.getFunction(method)(...args, ...(overrides ? [overrides] : []))
     const receipt = await transaction.wait()
     if (!receipt) throw new Error('Транзакция отправлена, но receipt не получен.')
     return receipt as ContractTransactionReceipt

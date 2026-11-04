@@ -1,6 +1,6 @@
 {
   "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
-  "generatedAt": "2026-11-03T20:16:17.056Z",
+  "generatedAt": "2026-11-04T15:33:38.409Z",
   "contracts": {
     "registry": {
       "title": "Suite Registry",
@@ -10,6 +10,11 @@
     "demoToken": {
       "title": "Demo USDC",
       "contractName": "DemoUSDC",
+      "category": "infrastructure"
+    },
+    "swap": {
+      "title": "Zenith Swap",
+      "contractName": "ZenithSwap",
       "category": "infrastructure"
     },
     "zenlink": {

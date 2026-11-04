@@ -1,6 +1,7 @@
 [
   { "key": "registry", "contractName": "ZenithSuiteRegistry", "title": "Suite Registry", "category": "infrastructure", "constructor": [] },
   { "key": "demoToken", "contractName": "DemoUSDC", "title": "Demo USDC", "category": "infrastructure", "constructor": [] },
+  { "key": "swap", "contractName": "ZenithSwap", "title": "Zenith Swap", "category": "infrastructure", "constructor": [] },
   { "key": "zenlink", "contractName": "EscrowVault", "title": "ZenLink", "category": "payments", "constructor": [] },
   { "key": "pactfi", "contractName": "HabitPool", "title": "PactFi", "category": "payments", "constructor": [] },
   { "key": "splitzen", "contractName": "GroupTab", "title": "SplitZen", "category": "payments", "constructor": [] },

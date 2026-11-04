@@ -8,6 +8,7 @@ import { useToast } from '../../context/ToastContext'
 import { useWallet } from '../../context/WalletContext'
 import { eventValue, hashQuery, wait } from '../../lib/contracts'
 import { shortAddress } from '../../lib/network'
+import { SwapPanel } from './SwapPanel'
 import { DappShell, HowItWorks, Panel, StatusRow, SubmitButton, TrustNote, useAsyncAction } from './shared'
 
 interface CreatedLink {
@@ -93,6 +94,7 @@ export function ZenLinkPage() {
 
   const aside = (
     <>
+      <SwapPanel />
       <Panel title="Защита ссылки" eyebrow="ZERO BACKEND">
         <div className="security-list">
           <div><span><KeyRound /></span><div><strong>Одноразовый ключ</strong><p>Генерируется Web Crypto в этом браузере.</p></div></div>
